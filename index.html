@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Gundluru - projects</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a>Nikhil Gundluru</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#intro">INTRO</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="Assets/NIkhil_Gundluru_Resume.pdf" target="_blank"><span>RESUME</span></a></li>                
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div id="particles-js"></div>
+        <div class="home-content">
+            <div class="text-content">
+                <h1 style="justify-content: center; align-items: center; display: flex; gap: 15px; margin-left: 8%;">NIKHIL  GUNDLURU</h1>
+                <hr style="width: 150px; height: 2px; border: none; color: #333; background-color: #333; margin: 10px;">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/nikhil-gundluru-0b2554206/" target="_blank" class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/nikhilgundluru" target="_blank" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/your-twitter-handle" target="_blank" class="social-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div><br>
+                <p>Hi, I'm Nikhil Gundluru, a Data Science enthusiast with a passion for analyzing data and developing machine learning models. Explore my projects and skills to learn more about my work.</p>
+            </div>
+            <div class="image-content">
+                <img src="https://img.freepik.com/premium-vector/cute-little-boy-using-laptop-computer-vector-cartoon-illustration_1142-73869.jpg?w=740" alt="Nikhil Gundluru">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="intro-background"></div>
+        <div class="intro-content">
+            <div class="intro-image">
+                <img src="Assets/profile-pic (1).png" alt="intro Me">
+            </div>
+            <div class="intro-text">
+                <p><span>Hello!</span> I'm Nikhil,<br><br>A dedicated and passionate Data Science enthusiast with a strong foundation in Computer Science and Engineering, graduated from RGUKT - IIIT, RK Valley, in April 2024. Throughout my academic journey, I have developed a deep understanding of data analysis, machine learning, and programming, complemented by hands-on experience in various projects that showcase my skills and creativity.</p><br><br>
+                <p>My journey in data science began with a keen interest in understanding data patterns and trends. Over the years, I have developed a strong skill set in data analysis, machine learning, and data visualization.</p><br>
+            </div>
+        </div>
+        <div class="row" id="timeline">
+            <div class="col-lg-12 text-center">
+                <svg width="1000" height="100">
+                    <line x1="0" y1="50" x2="960" y2="50" style="stroke:black; stroke-width:1.5" /> <!-- Customize length here -->
+        
+                    <circle cx="250" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+                    <text text-anchor="middle" x="250" y="80" fill="black">2020</text>
+                    <text font-size="14" text-anchor="middle" x="130" y="30" fill="black">Pre University Course (PUC)</text>
+                    <text style="font-style: italic" font-size="14" text-anchor="middle" x="130" y="80" fill="#808080">RGUKT - IIIT</text>
+        
+                    <circle cx="590" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+                    <text text-anchor="middle" x="590" y="80" fill="black">2024</text>
+                    <text font-size="14" text-anchor="middle" x="420" y="30" fill="black">B.Tech in Computer Science Engineering</text>
+                    <text style="font-style: italic" font-size="14" text-anchor="middle" x="410" y="80" fill="#808080">RGUKT - IIIT</text>
+        
+                    <circle cx="800" cy="50" r="10" stroke="#f8f9fa" stroke-width="6" fill="#69b3a2" />
+                    <text text-anchor="middle" x="800" y="80" fill="black">Oct 2024</text>
+                    <text font-size="14" text-anchor="middle" x="690" y="30" fill="black">Data Science Intern</text>
+                    <text style="font-style: italic" font-size="14" text-anchor="middle" x="690" y="80" fill="#808080">Feynn Labs</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section id="projects">
+        <div class="heading">
+            <h2>PROJECTS</h2>
+            <p>A glimpse of projects that I've been working on</p>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Show All</button>
+            <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+            <button class="filter-btn" data-filter="visualization">Visualization</button>
+            <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
+        </div>
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="card" data-category="machine-learning">
+              <img src="Assets/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f76322f726573697a653a6669743a313430302f312a385653314a79455438774b64734e4736664d6c7054412e706e67.png" alt="Card Image">
+              <div class="card-content">
+                <h3 class="card-title">House Price Prediction</h3>
+                <div class="card-tags">
+                  <span>Machiine Learning</span>
+                  <span>Regression</span>
+                  <span>Flask</span>
+                </div>
+                <p class="card-context"> Developed a machine learning model to predict house prices in Bengaluru using various regression algorithms.</p>
+                <a onclick="openPopup('popup1')">Read More</a>
+              </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card" data-category="machine-learning">
+              <img src="Assets/1_hJ60oLP_nSQUvAKroaBKlQ.png" alt="Card Image">
+              <div class="card-content">
+                <h3 class="card-title">Credit Card Fraud Detection</h3>
+                <div class="card-tags">
+                  <span>Machine Learning</span>
+                  <span>classification</span>
+                  <span>Fraud Detection</span>
+                </div>
+                <p class="card-context">Implemented a Credit Card Fraud Detection system using classification models to analyze fraudulent transactions.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="card" data-category="visualization">
+              <img src="Assets/bliinkit gif.gif" alt="Card Image">
+              <div class="card-content">
+                <h3 class="card-title">Blinkit Analysis</h3>
+                <div class="card-tags">
+                  <span>Power BI</span>
+                  <span>Excel</span>
+                  <span>SQL</span>
+                </div>
+                <p class="card-context">Conducted exploratory data analysis on Blinkit's operational data to uncover trends in delivery time, customer satisfaction, and sales.</p>
+                <a href="https://project.novypro.com/zKIYEb" target="_blank">Read More</a>
+              </div>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="card" data-category="machine-learning">
+              <img src="Assets/download.png" alt="Card Image">
+              <div class="card-content">
+                <h3 class="card-title">Inventory Management System</h3>
+                <div class="card-tags">
+                  <span>Machine Learning</span>
+                  <span>Time Series</span>
+                  <span>Forecastiing</span>
+                </div>
+                <p class="card-context">Prototyped an AI-powered inventory management system designed to optimize inventory levels for small businesses.</p>
+                <a href="#">Read More >></a>
+              </div>
+            </div>
+        
+            <!-- Card 5 -->
+            <div class="card" data-category="machine-learning">
+              <img src="Assets/download (2).png" alt="Card Image">
+              <div class="card-content">
+                <h3 class="card-title">EV Market Segmentation in India</h3>
+                <div class="card-tags">
+                  <span>Market Segmentation</span>
+                  <span>Data Analysis</span>
+                  <span>Time Series</span>
+                </div>
+                <p class="card-context">Performed market segmentation analysis for Electric Vehicles (EV) in India using geographic and demographic data.</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+
+
+            <!-- Pop-up for Project 1 -->
+            <div id="popup1" class="popup-overlay">
+                <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+                <div class="popup-content">
+                    <h3>House Price Prediction Using Machine Learning</h3>
+                    
+                    <h4>Problem Statement</h4>
+                    <p>
+                        The primary goal of this project was to predict house prices in Bengaluru based on various features such as location, size, number of bedrooms, bathrooms, and other property attributes. 
+                        Real estate market predictions are crucial for investors, buyers, and businesses to make informed decisions.
+                    </p>
+            
+                    <h4>Methodology</h4>
+                    <p>
+                        In this project, we used multiple machine learning techniques to build a predictive model. The process involved:
+                    </p>
+                    <ol>
+                        <li><strong>Data Collection:</strong> The dataset consisted of various attributes like the number of bedrooms, bathrooms, total square feet, and the location of the property.</li>
+                        <li><strong>Data Cleaning:</strong> We handled missing values, inconsistencies in location names, and removed outliers that could skew the model's predictions.</li>
+                        <li>
+                            <strong>Exploratory Data Analysis (EDA):</strong>
+                            <div class="image-text-wrapper">
+                                <img src="Assets/download.png" alt="Exploratory Data Analysis" class="half-size-img">
+                                <span>We visualized data distributions, correlations, and feature relationships to better understand the dataset.</span>
+                            </div>
+                        </li>
+                        <li><strong>Feature Engineering:</strong> Features like location, total square feet, and the number of bedrooms were carefully analyzed and transformed to maximize predictive power.</li>
+                        <li>
+                            <strong>Modeling:</strong>
+                            <div class="image-text-wrapper">
+                                <img src="Assets/download.png" alt="Model Performance" class="half-size-img">
+                                <span>Multiple models were used, including Linear Regression, Ridge Regression, Lasso Regression, and Random Forest Regression. Cross-validation was performed to evaluate model performance.</span>
+                            </div>
+                        </li>
+                    </ol>
+            
+                    <h4>Technologies and Tools Used</h4>
+                    <ul>
+                        <li><strong>Programming Language:</strong> Python</li>
+                        <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Flask (for web deployment)</li>
+                        <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript (for frontend)</li>
+                    </ul>
+            
+                    <h4>Key Challenges</h4>
+                    <p>
+                        During the project, some significant challenges were encountered:
+                    </p>
+                    <ul>
+                        <li><strong>Data Outliers:</strong> A number of extreme values (e.g., properties with over 10 bedrooms) had to be handled carefully so as not to distort model training.</li>
+                        <li><strong>Location Standardization:</strong> There were inconsistencies in how locations were entered, so manual and automated cleaning was essential to merge equivalent entries.</li>
+                        <li><strong>Overfitting:</strong> Some models, especially complex ones like Random Forest, tended to overfit the training data. Regularization techniques such as Ridge and Lasso Regression helped mitigate this.</li>
+                    </ul>
+            
+                    <h4>Results</h4>
+                    <p>
+                        After training the models, we evaluated their performance using R-squared values and mean absolute error (MAE). Here are the results:
+                    </p>
+                    <ul>
+                        <li><strong>Linear Regression:</strong> R² = 0.8559</li>
+                        <li><strong>Lasso Regression:</strong> R² = 0.7101</li>
+                        <li><strong>Ridge Regression:</strong> R² = 0.8559</li>
+                        <li><strong>Random Forest Regression:</strong> R² = 0.8384</li>
+                    </ul>
+                    <p>
+                        Linear and Ridge Regression performed the best, achieving an R² of 0.8559, which means they can explain about 85% of the variance in house prices.
+                    </p>
+                    <div class="image-text-wrapper">
+                        <img src="Assets/download.png" alt="House Price Prediction Results" class="half-size-img">
+                        <span>Results showing the performance of different regression models.</span>
+                    </div>
+            
+                    <h4>Web Application Deployment</h4>
+                    <p>
+                        To make the prediction model accessible, I developed a web application using Flask. Users can input property details (like location, number of bedrooms, and square footage), and the app will provide an estimated house price based on the trained model.
+                    </p>
+                    <div class="image-text-wrapper">
+                        <img src="Assets/download.png" alt="Web Application Screenshot" class="half-size-img">
+                        <span>The interface of the web application for house price prediction.</span>
+                    </div>
+                    <p>
+                        The frontend was built using HTML, CSS, and JavaScript for smooth interaction. AJAX was used for asynchronous communication between the client and server to update price estimates without refreshing the page.
+                    </p>
+            
+                    <h4>Conclusions</h4>
+                    <p>
+                        This project successfully demonstrated how machine learning models can be applied to real estate price prediction with considerable accuracy. While the models performed well, there is always room for improvement, especially with the integration of more complex techniques like deep learning and advanced feature engineering.
+                    </p>
+            
+                    <h4>Future Improvements</h4>
+                    <ul>
+                        <li><strong>Incorporating Time-Series Data:</strong> Adding historical pricing data to predict future trends more accurately.</li>
+                        <li><strong>Adding More Features:</strong> Using additional features such as proximity to amenities, crime rate, and school ratings to refine the predictions.</li>
+                        <li><strong>Interactive Maps:</strong> Embedding Google Maps for users to visualize property locations and surrounding amenities interactively.</li>
+                    </ul>
+            
+                    <h4>GitHub Repository</h4>
+                    <p>
+                        You can explore the full code and datasets for this project on my GitHub repository: <a href="https://github.com/your-repo-link" target="_blank">House Price Prediction Project</a>.
+                    </p>
+                </div>
+            </div>
+            
+            
+        </div>        
+    </section>
+
+    <section id="contact">
+        <div class="start">
+            <h3>Let's get connected</h3>
+            <p>Get in touch with me via social media <br> or send me an email.</p>
+        </div>
+        <div class="end">
+            <h3>Living, learning, & leveling up <br> one day at a time.</h3>
+            <div class="social-icons">
+                <a href="https://github.com/Nikhil2349" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nikhil-gundluru-0b2554206/" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/nikhil._._.g/" class="icon gmail"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:nikhilgundluru349@gmail.com" class="icon gmail"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 || Nikhil Gundluru.All Rights Reserved</p>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+        "particles": {
+            "number": {
+            "value": 90,
+            "density": {
+                "enable": true,
+                "value_area": 550
+            }
+            },
+            "color": {
+            "value": "#36cc81"
+            },
+            "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            }
+            },
+            "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+            },
+            "size": {
+            "value": 5,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 30,
+                "size_min": 0.1,
+                "sync": false
+            }
+            },
+            "line_linked": {
+            "enable": true,
+            "distance": 130,
+            "color": "#000",
+            "opacity": 0.4,
+            "width": 1
+            },
+            "move": {
+            "enable": true,
+            "speed": 4,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+            },
+            "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+            }
+        },
+        "retina_detect": true
+        });
+        
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        const body = document.querySelector('body');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.card');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                body.classList.add('scrolled');
+            } else {
+                body.classList.remove('scrolled');
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
+
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    projectCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+
+        //popup operation//
+        function openPopup(id) {
+            document.getElementById(id).style.display = 'flex';
+        }
+
+        function closePopup(id) {
+            document.getElementById(id).style.display = 'none';
+        }
+
+
+        
+    </script>
+</body>
+</html>
