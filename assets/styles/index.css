@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yesteryear&display=swap');
 
 :root {
     --d: 700ms;
     --e: cubic-bezier(0.19, 1, 0.22, 1);
-    --font-sans: 'Rubik', sans-serif;
-    --font-serif: 'Cardo', serif;
+    --font-sans: 'Poppins', sans-serif;
+    --font-serif: 'Poppins', serif;
 }
 html {
     scroll-behavior: smooth;
@@ -18,16 +18,17 @@ html {
 }
 
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-    background: transparent;
+    background: white;
     color: black;
-    padding: 10px;
+    padding: 30px;
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 0;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
     z-index: 1000; /* Ensure it's above other content */
 }
 
@@ -35,12 +36,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: auto;
     padding-left: 50px;
-    background: white; /* Optional: semi-transparent background */
-    transition: background 0.3s; /* Smooth transition for background */
 }
 
 .nav-active {
@@ -55,7 +53,6 @@ body.scrolled header {
 .logo a {
     color: black;
     text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -154,13 +151,14 @@ body.scrolled header {
     top: 0;
     left: 0;
     z-index: -1; /* Make sure it's behind the content */
+    background-color: #1D1E22;
+    color: white;
   }
   
 
 /* Home Section */
 #home {
     color: black;
-    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,7 +169,7 @@ body.scrolled header {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    padding: 15px;
+    padding: 20px;
     margin-top: 3%;
 }
 
@@ -185,7 +183,6 @@ body.scrolled header {
 
 .text-content h1 {
     font-size: 45px;
-    font-family:'Courier New', Courier, monospace;
     margin-bottom: 10px;
 }
 
@@ -226,7 +223,7 @@ body.scrolled header {
 
 
 .image-content img {
-    max-width: 500px; /* Adjust as needed */
+    max-width: 550px; /* Adjust as needed */
     height: auto;
     border-radius: 100%; /* Optional: add rounded corners */
 }
@@ -273,10 +270,11 @@ body.scrolled header {
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin-top: 30px;
     gap: 60px;
     z-index: 1;
+    justify-content: center;
 }
 
 .intro-image img {
@@ -292,6 +290,10 @@ body.scrolled header {
     max-width: 800px;
 }
 
+svg{
+    overflow: auto;
+}
+
 
 
 .intro-text p span {
@@ -304,19 +306,6 @@ body.scrolled header {
     line-height: 1.6;
     position: relative;
     z-index: 1;
-}
-
-.row {
-    padding: 3% 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-svg {
-    max-width: 100%;
-    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -359,12 +348,10 @@ svg {
 
 .heading h2{
     font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 .heading p{
     font-size: 18px;
-    font-family: cursive;
 }
 
 .filters {
@@ -381,9 +368,11 @@ svg {
     padding: 10px 20px;
     margin: 5px;
     cursor: pointer;
-    border:1px solid #34659a;
-    border-radius: 5px;
+    border:0px solid #34659a;
+    border-radius: 30px;
     transition: background-color 0.3s, color 0.3s;
+
+    
 }
 
 .filter-btn.active {
@@ -399,8 +388,7 @@ svg {
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1350px;
-    gap: 20px;
+    gap: 30px;
     padding-inline: 7%;
   }
   
@@ -424,29 +412,32 @@ svg {
   }
   
   .card-title {
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
   }
   
   .card-tags {
     display: flex;
     flex-wrap: wrap; /* Allow tags to wrap to the next row */
     gap: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     opacity: 0; /* Initially hidden */
     animation: fadeIn 0.6s forwards; /* Animation for the tags */
+    min-height: 70px;
   }
   
   .card-tags span {
-    background-color: #357999;
+    background-color: #205c78;
     color: #fff;
-    padding: 3px 5px;
-    border-radius: 10px;
+    padding: 6px 15px;
+    border-radius: 30px;
     font-size: 13px;
     white-space: nowrap; /* Ensure each tag doesn't break within */
     opacity: 0; /* Initially hidden */
     animation: tagSlideIn 0.5s forwards; /* Individual tag animation */
+    height: 30px;
   }
   
   .card-tags span:nth-child(1) {
@@ -486,7 +477,8 @@ svg {
   .card-context {
     font-size: 14px;
     color: #555;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    min-height: 80px;
   }
   
   .card a {
@@ -580,12 +572,10 @@ svg {
 
 .start h3{
     font-size: 33px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .start p{
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
@@ -601,7 +591,6 @@ svg {
     text-align: center;
     font-size: 35px;
     color: white;
-    font-family: "Playwrite GB S", cursive;
 }
 .end p{
     text-align: center;
@@ -648,4 +637,9 @@ svg {
 
 .gmail:hover {
     border-color: white;
+}
+
+.quotation{
+    font-family: 'Yesteryear';
+    font-size: 60px !important;
 }
